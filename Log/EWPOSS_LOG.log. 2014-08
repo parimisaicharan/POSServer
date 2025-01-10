@@ -1,0 +1,7 @@
+[ERROR] 2014-08-07 12:52:04 posstaging.ArticleAutoThread:run:74 -  INFO : Downloading master data through automatic download 
+[ERROR] 2014-08-07 12:52:06 posstaging.ArticleWebService:callWebService:178 -  INFO :  Web service name : MI_OB_SYN_HighFrequencyData : From Date : null To Datenull
+[ERROR] 2014-08-07 12:52:08 posstaging.ArticleWebService:callWebService:179 -  INFO :  Sending request for : Store Code : TSAF Site : TSAF Article Characteristics : X Article Master : X Discount : X Stock Master : X Tax : X UCP : X Force Release : X Employee : X Others : X Promotions : X Gift Voucher : X Condition Master : X
+[ERROR] 2014-08-07 12:52:09 posstaging.ArticleWebService:callWebService:181 -  INFO :  Received : Store Code : TSAF Site : TSAF Article Characteristics : 0 Article Master : 0 Discount : 0 Stock Master : 0 Tax : 0 UCP : 0 Force Release : 0 Employee : 0 Others : 0 Promotions : 0 Gift Voucher : 0 Condition Master : 20
+[ERROR] 2014-08-07 12:52:10 posstaging.ArticleWebService:downloadDataFromISR:1157 -  INFO :  SiteMaster :Updated
+[ERROR] 2014-08-07 12:52:16 posstaging.ArticleWebService:downloadDataFromISR:1639 -  INFO :  Condition Type master :Updated Records :20
+[ERROR] 2014-08-07 12:52:17 posstaging.ArticleWebService:downloadDataFromISR:1668 -  INFO :  Delay in delivery discount :Updated Records :2

@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-MI_OB_ASYN_Inquiry" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_Inquiry"/>
+        <property name="wsdl-MI_OB_ASYN_Inquiry" location="xml-resources/web-service-references/MI_OB_ASYN_Inquiry/wsdl/MI_OB_ASYN_Inquiry.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_Inquiry" destdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_Inquiry" wsdl="${wsdl-MI_OB_ASYN_Inquiry}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_ASYN_Inquiry.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_ASYN_Inquiry}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_Inquiry"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_Inquiry">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_ASYN_Inquiry" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_Inquiry"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/inquiry"/>
+    </target>
+    <target name="wsimport-client-MI_OB_ASYN_PatchStatus" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_PatchStatus"/>
+        <property name="wsdl-MI_OB_ASYN_PatchStatus" location="xml-resources/web-service-references/MI_OB_ASYN_PatchStatus/wsdl/MI_OB_ASYN_PatchStatus.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_PatchStatus" destdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_PatchStatus" wsdl="${wsdl-MI_OB_ASYN_PatchStatus}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_ASYN_PatchStatus.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_ASYN_PatchStatus}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_PatchStatus"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_PatchStatus">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_ASYN_PatchStatus" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_PatchStatus"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/patchstatus"/>
+    </target>
+    <target name="wsimport-client-MI_OB_ASYN_Quotation" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_Quotation"/>
+        <property name="wsdl-MI_OB_ASYN_Quotation" location="xml-resources/web-service-references/MI_OB_ASYN_Quotation/wsdl/MI_OB_ASYN_Quotation.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_Quotation" destdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_Quotation" wsdl="${wsdl-MI_OB_ASYN_Quotation}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_ASYN_Quotation.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_ASYN_Quotation}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_Quotation"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_Quotation">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_ASYN_Quotation" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_Quotation"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/quotation"/>
+    </target>
+    <target name="wsimport-client-MI_OB_ASYN_SalesOrderModification" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_SalesOrderModification"/>
+        <property name="wsdl-MI_OB_ASYN_SalesOrderModification" location="xml-resources/web-service-references/MI_OB_ASYN_SalesOrderModification/wsdl/MI_OB_ASYN_SalesOrderModification.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_SalesOrderModification" destdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_SalesOrderModification" wsdl="${wsdl-MI_OB_ASYN_SalesOrderModification}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_ASYN_SalesOrderModification.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_ASYN_SalesOrderModification}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_SalesOrderModification"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_SalesOrderModification">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_ASYN_SalesOrderModification" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_SalesOrderModification"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/salesordermodification"/>
+    </target>
+    <target name="wsimport-client-MI_OB_SYN_DataArchivalExecution" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_DataArchivalExecution"/>
+        <property name="wsdl-MI_OB_SYN_DataArchivalExecution" location="xml-resources/web-service-references/MI_OB_SYN_DataArchivalExecution/wsdl/MI_OB_SYN_DataArchivalExecution.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_DataArchivalExecution" destdir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_DataArchivalExecution" wsdl="${wsdl-MI_OB_SYN_DataArchivalExecution}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_SYN_DataArchivalExecution.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_SYN_DataArchivalExecution}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_DataArchivalExecution"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_DataArchivalExecution">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_SYN_DataArchivalExecution" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_DataArchivalExecution"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/dataarchivalexecution"/>
+    </target>
+    <target name="wsimport-client-MI_OB_SYN_GVVerification" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_GVVerification"/>
+        <property name="wsdl-MI_OB_SYN_GVVerification" location="xml-resources/web-service-references/MI_OB_SYN_GVVerification/wsdl/MI_OB_SYN_GVVerification.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_GVVerification" destdir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_GVVerification" wsdl="${wsdl-MI_OB_SYN_GVVerification}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_SYN_GVVerification.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_SYN_GVVerification}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_GVVerification"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_GVVerification">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_SYN_GVVerification" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_GVVerification"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/gvverification"/>
+    </target>
+    <target name="wsimport-client-MI_OB_SYN_VersionManagement" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_VersionManagement"/>
+        <property name="wsdl-MI_OB_SYN_VersionManagement" location="xml-resources/web-service-references/MI_OB_SYN_VersionManagement/wsdl/MI_OB_SYN_VersionManagement.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_VersionManagement" destdir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_VersionManagement" wsdl="${wsdl-MI_OB_SYN_VersionManagement}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_SYN_VersionManagement.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_SYN_VersionManagement}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_VersionManagement"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_VersionManagement">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_SYN_VersionManagement" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_VersionManagement"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/versionmanagement"/>
+    </target>
+    <target name="wsimport-client-MI_OB_SYN_HighFrequencyResponse" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_HighFrequencyResponse"/>
+        <property name="wsdl-MI_OB_SYN_HighFrequencyResponse" location="xml-resources/web-service-references/MI_OB_SYN_HighFrequencyResponse/wsdl/MI_OB_SYN_HighFrequencyResponse.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_HighFrequencyResponse" destdir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_HighFrequencyResponse" wsdl="${wsdl-MI_OB_SYN_HighFrequencyResponse}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_SYN_HighFrequencyResponse.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_SYN_HighFrequencyResponse}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_HighFrequencyResponse"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_HighFrequencyResponse">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_SYN_HighFrequencyResponse" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_HighFrequencyResponse"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/highfrequencyresponse"/>
+    </target>
+    <target name="wsimport-client-MI_OB_SYN_SiteDateInfo" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_SiteDateInfo"/>
+        <property name="wsdl-MI_OB_SYN_SiteDateInfo" location="xml-resources/web-service-references/MI_OB_SYN_SiteDateInfo/wsdl/MI_OB_SYN_SiteDateInfo.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_SiteDateInfo" destdir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_SiteDateInfo" wsdl="${wsdl-MI_OB_SYN_SiteDateInfo}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_SYN_SiteDateInfo.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_SYN_SiteDateInfo}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_SiteDateInfo"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_SiteDateInfo">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_SYN_SiteDateInfo" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_SiteDateInfo"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/sitedateinfo"/>
+    </target>
+    <target name="wsimport-client-MI_OB_ASYN_HighFrequencyLog" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_HighFrequencyLog"/>
+        <property name="wsdl-MI_OB_ASYN_HighFrequencyLog" location="xml-resources/web-service-references/MI_OB_ASYN_HighFrequencyLog/wsdl/MI_OB_ASYN_HighFrequencyLog.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_HighFrequencyLog" destdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_HighFrequencyLog" wsdl="${wsdl-MI_OB_ASYN_HighFrequencyLog}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_ASYN_HighFrequencyLog.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_ASYN_HighFrequencyLog}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_HighFrequencyLog"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_HighFrequencyLog">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_ASYN_HighFrequencyLog" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_HighFrequencyLog"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/highfrequencylog"/>
+    </target>
+    <target name="wsimport-client-MI_OB_SYN_HighFrequencyStock" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_HighFrequencyStock"/>
+        <property name="wsdl-MI_OB_SYN_HighFrequencyStock" location="xml-resources/web-service-references/MI_OB_SYN_HighFrequencyStock/wsdl/MI_OB_SYN_HighFrequencyStock.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_HighFrequencyStock" destdir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_HighFrequencyStock" wsdl="${wsdl-MI_OB_SYN_HighFrequencyStock}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_SYN_HighFrequencyStock.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_SYN_HighFrequencyStock}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_HighFrequencyStock"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_HighFrequencyStock">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_SYN_HighFrequencyStock" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_HighFrequencyStock"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/highfrequencystock"/>
+    </target>
+    <target name="wsimport-client-MI_OB_SYN_DataArchieving" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_DataArchieving"/>
+        <property name="wsdl-MI_OB_SYN_DataArchieving" location="xml-resources/web-service-references/MI_OB_SYN_DataArchieving/wsdl/MI_OB_SYN_DataArchieving.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_DataArchieving" destdir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_DataArchieving" wsdl="${wsdl-MI_OB_SYN_DataArchieving}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_SYN_DataArchieving.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_SYN_DataArchieving}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_DataArchieving"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_DataArchieving">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_SYN_DataArchieving" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_DataArchieving"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/dataarchieving"/>
+    </target>
+    <target name="wsimport-client-MI_OB_ASYN_DataArchieving" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_DataArchieving"/>
+        <property name="wsdl-MI_OB_ASYN_DataArchieving" location="xml-resources/web-service-references/MI_OB_ASYN_DataArchieving/wsdl/MI_OB_ASYN_DataArchieving.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_DataArchieving" destdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_DataArchieving" wsdl="${wsdl-MI_OB_ASYN_DataArchieving}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_ASYN_DataArchieving.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_ASYN_DataArchieving}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_DataArchieving"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_DataArchieving">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_ASYN_DataArchieving" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_DataArchieving"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/dataarchieving"/>
+    </target>
+    <target name="wsimport-client-SI_OB_ASYN_GiftVoucherIssualService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/SI_OB_ASYN_GiftVoucherIssualService"/>
+        <property name="wsdl-SI_OB_ASYN_GiftVoucherIssualService" location="xml-resources/web-service-references/SI_OB_ASYN_GiftVoucherIssualService/wsdl/SI_OB_ASYN_GiftVoucherIssualService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/SI_OB_ASYN_GiftVoucherIssualService" destdir="${build.generated.dir}/jax-wsCache/SI_OB_ASYN_GiftVoucherIssualService" wsdl="${wsdl-SI_OB_ASYN_GiftVoucherIssualService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/SI_OB_ASYN_GiftVoucherIssualService.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-SI_OB_ASYN_GiftVoucherIssualService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/SI_OB_ASYN_GiftVoucherIssualService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/SI_OB_ASYN_GiftVoucherIssualService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-SI_OB_ASYN_GiftVoucherIssualService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/SI_OB_ASYN_GiftVoucherIssualService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/giftvoucherissual"/>
+    </target>
+    <target name="wsimport-client-MI_OB_ASYN_GiftCardCancelService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_GiftCardCancelService"/>
+        <property name="wsdl-MI_OB_ASYN_GiftCardCancelService" location="xml-resources/web-service-references/MI_OB_ASYN_GiftCardCancelService/wsdl/MI_OB_ASYN_GiftCardCancelService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_GiftCardCancelService" destdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_GiftCardCancelService" wsdl="${wsdl-MI_OB_ASYN_GiftCardCancelService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_ASYN_GiftCardCancelService.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_ASYN_GiftCardCancelService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_GiftCardCancelService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_GiftCardCancelService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_ASYN_GiftCardCancelService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_GiftCardCancelService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/giftcardcancel"/>
+    </target>
+    <target name="wsimport-client-MI_OB_ASYN_GiftCardSalesService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_GiftCardSalesService"/>
+        <property name="wsdl-MI_OB_ASYN_GiftCardSalesService" location="xml-resources/web-service-references/MI_OB_ASYN_GiftCardSalesService/wsdl/MI_OB_ASYN_GiftCardSalesService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_GiftCardSalesService" destdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_GiftCardSalesService" wsdl="${wsdl-MI_OB_ASYN_GiftCardSalesService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_ASYN_GiftCardSalesService.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_ASYN_GiftCardSalesService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_GiftCardSalesService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_GiftCardSalesService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_ASYN_GiftCardSalesService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_GiftCardSalesService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/giftcardsales"/>
+    </target>
+    <target name="wsimport-client-MI_OB_ASYN_AdvanceReceiptQuickService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_AdvanceReceiptQuickService"/>
+        <property name="wsdl-MI_OB_ASYN_AdvanceReceiptQuickService" location="xml-resources/web-service-references/MI_OB_ASYN_AdvanceReceiptQuickService/wsdl/MI_OB_ASYN_AdvanceReceiptQuickService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_AdvanceReceiptQuickService" destdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_AdvanceReceiptQuickService" wsdl="${wsdl-MI_OB_ASYN_AdvanceReceiptQuickService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_ASYN_AdvanceReceiptQuickService.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_ASYN_AdvanceReceiptQuickService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_AdvanceReceiptQuickService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_AdvanceReceiptQuickService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_ASYN_AdvanceReceiptQuickService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_AdvanceReceiptQuickService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/advancereceiptquick"/>
+    </target>
+    <target name="wsimport-client-MI_OB_ASYN_InvoiceCancellationService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_InvoiceCancellationService"/>
+        <property name="wsdl-MI_OB_ASYN_InvoiceCancellationService" location="xml-resources/web-service-references/MI_OB_ASYN_InvoiceCancellationService/wsdl/MI_OB_ASYN_InvoiceCancellationService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_InvoiceCancellationService" destdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_InvoiceCancellationService" wsdl="${wsdl-MI_OB_ASYN_InvoiceCancellationService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_ASYN_InvoiceCancellationService.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_ASYN_InvoiceCancellationService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_InvoiceCancellationService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_InvoiceCancellationService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_ASYN_InvoiceCancellationService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_InvoiceCancellationService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/invoicecancellation"/>
+    </target>
+    <target name="wsimport-client-MI_OB_ASYN_AdvanceReceiptService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_AdvanceReceiptService"/>
+        <property name="wsdl-MI_OB_ASYN_AdvanceReceiptService" location="xml-resources/web-service-references/MI_OB_ASYN_AdvanceReceiptService/wsdl/MI_OB_ASYN_AdvanceReceiptService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_AdvanceReceiptService" destdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_AdvanceReceiptService" wsdl="${wsdl-MI_OB_ASYN_AdvanceReceiptService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_ASYN_AdvanceReceiptService.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_ASYN_AdvanceReceiptService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_AdvanceReceiptService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_AdvanceReceiptService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_ASYN_AdvanceReceiptService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_AdvanceReceiptService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/advancereceipt"/>
+    </target>
+    <target name="wsimport-client-MI_OB_ASYN_AdvanceReceiptSaleOrderCancellationService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_AdvanceReceiptSaleOrderCancellationService"/>
+        <property name="wsdl-MI_OB_ASYN_AdvanceReceiptSaleOrderCancellationService" location="xml-resources/web-service-references/MI_OB_ASYN_AdvanceReceiptSaleOrderCancellationService/wsdl/MI_OB_ASYN_AdvanceReceiptSaleOrderCancellationService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_AdvanceReceiptSaleOrderCancellationService" destdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_AdvanceReceiptSaleOrderCancellationService" wsdl="${wsdl-MI_OB_ASYN_AdvanceReceiptSaleOrderCancellationService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_ASYN_AdvanceReceiptSaleOrderCancellationService.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_ASYN_AdvanceReceiptSaleOrderCancellationService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_AdvanceReceiptSaleOrderCancellationService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_AdvanceReceiptSaleOrderCancellationService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_ASYN_AdvanceReceiptSaleOrderCancellationService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_AdvanceReceiptSaleOrderCancellationService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/advancereceiptsaleordercancellation"/>
+    </target>
+    <target name="wsimport-client-MI_OB_ASYN_PayOutService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_PayOutService"/>
+        <property name="wsdl-MI_OB_ASYN_PayOutService" location="xml-resources/web-service-references/MI_OB_ASYN_PayOutService/wsdl/MI_OB_ASYN_PayOutService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_PayOutService" destdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_PayOutService" wsdl="${wsdl-MI_OB_ASYN_PayOutService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_ASYN_PayOutService.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_ASYN_PayOutService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_PayOutService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_PayOutService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_ASYN_PayOutService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_PayOutService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/payoutcreditmemo"/>
+    </target>
+    <target name="wsimport-client-MI_OB_ASYN_ARReversalService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_ARReversalService"/>
+        <property name="wsdl-MI_OB_ASYN_ARReversalService" location="xml-resources/web-service-references/MI_OB_ASYN_ARReversalService/wsdl/MI_OB_ASYN_ARReversalService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_ARReversalService" destdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_ARReversalService" wsdl="${wsdl-MI_OB_ASYN_ARReversalService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_ASYN_ARReversalService.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_ASYN_ARReversalService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_ARReversalService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_ARReversalService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_ASYN_ARReversalService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_ARReversalService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/advancereceiptreversal"/>
+    </target>
+    <target name="wsimport-client-MI_OB_ASYN_ServiceOrderService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_ServiceOrderService"/>
+        <property name="wsdl-MI_OB_ASYN_ServiceOrderService" location="xml-resources/web-service-references/MI_OB_ASYN_ServiceOrderService/wsdl/MI_OB_ASYN_ServiceOrderService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_ServiceOrderService" destdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_ServiceOrderService" wsdl="${wsdl-MI_OB_ASYN_ServiceOrderService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_ASYN_ServiceOrderService.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_ASYN_ServiceOrderService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_ServiceOrderService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_ServiceOrderService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_ASYN_ServiceOrderService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_ServiceOrderService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/serviceorder"/>
+    </target>
+    <target name="wsimport-client-MI_OB_ASYN_CustomerMasterService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_CustomerMasterService"/>
+        <property name="wsdl-MI_OB_ASYN_CustomerMasterService" location="xml-resources/web-service-references/MI_OB_ASYN_CustomerMasterService/wsdl/MI_OB_ASYN_CustomerMasterService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_CustomerMasterService" destdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_CustomerMasterService" wsdl="${wsdl-MI_OB_ASYN_CustomerMasterService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_ASYN_CustomerMasterService.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_ASYN_CustomerMasterService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_CustomerMasterService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_CustomerMasterService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_ASYN_CustomerMasterService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_CustomerMasterService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/customermaster"/>
+    </target>
+    <target name="wsimport-client-MI_OB_ASYN_InvoiceCreationService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_InvoiceCreationService"/>
+        <property name="wsdl-MI_OB_ASYN_InvoiceCreationService" location="xml-resources/web-service-references/MI_OB_ASYN_InvoiceCreationService/wsdl/MI_OB_ASYN_InvoiceCreationService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_InvoiceCreationService" destdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_InvoiceCreationService" wsdl="${wsdl-MI_OB_ASYN_InvoiceCreationService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_ASYN_InvoiceCreationService.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_ASYN_InvoiceCreationService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_InvoiceCreationService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_InvoiceCreationService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_ASYN_InvoiceCreationService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_InvoiceCreationService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/invoicecreation"/>
+    </target>
+    <target name="wsimport-client-MI_OB_SYN_HighFrequencyArticleDataService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_HighFrequencyArticleDataService"/>
+        <property name="wsdl-MI_OB_SYN_HighFrequencyArticleDataService" location="xml-resources/web-service-references/MI_OB_SYN_HighFrequencyArticleDataService/wsdl/MI_OB_SYN_HighFrequencyArticleDataService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_HighFrequencyArticleDataService" destdir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_HighFrequencyArticleDataService" wsdl="${wsdl-MI_OB_SYN_HighFrequencyArticleDataService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_SYN_HighFrequencyArticleDataService.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_SYN_HighFrequencyArticleDataService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_HighFrequencyArticleDataService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_HighFrequencyArticleDataService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_SYN_HighFrequencyArticleDataService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_HighFrequencyArticleDataService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/highfrequencyarticledata"/>
+    </target>
+    <target name="wsimport-client-MI_OB_ASYN_SalesReturnService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_SalesReturnService"/>
+        <property name="wsdl-MI_OB_ASYN_SalesReturnService" location="xml-resources/web-service-references/MI_OB_ASYN_SalesReturnService/wsdl/MI_OB_ASYN_SalesReturnService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_SalesReturnService" destdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_SalesReturnService" wsdl="${wsdl-MI_OB_ASYN_SalesReturnService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_ASYN_SalesReturnService.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_ASYN_SalesReturnService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_SalesReturnService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_SalesReturnService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_ASYN_SalesReturnService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_SalesReturnService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/salesreturn"/>
+    </target>
+    <target name="wsimport-client-MI_OB_SYN_HighFrequencyDataService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_HighFrequencyDataService"/>
+        <property name="wsdl-MI_OB_SYN_HighFrequencyDataService" location="xml-resources/web-service-references/MI_OB_SYN_HighFrequencyDataService/wsdl/MI_OB_SYN_HighFrequencyDataService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_HighFrequencyDataService" destdir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_HighFrequencyDataService" wsdl="${wsdl-MI_OB_SYN_HighFrequencyDataService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_SYN_HighFrequencyDataService.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_SYN_HighFrequencyDataService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_HighFrequencyDataService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_HighFrequencyDataService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_SYN_HighFrequencyDataService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_HighFrequencyDataService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/highfrequencydata"/>
+    </target>
+    <target name="wsimport-client-MI_OB_SYN_ConfigurationDetailsService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_ConfigurationDetailsService"/>
+        <property name="wsdl-MI_OB_SYN_ConfigurationDetailsService" location="xml-resources/web-service-references/MI_OB_SYN_ConfigurationDetailsService/wsdl/MI_OB_SYN_ConfigurationDetailsService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_ConfigurationDetailsService" destdir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_ConfigurationDetailsService" wsdl="${wsdl-MI_OB_SYN_ConfigurationDetailsService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_SYN_ConfigurationDetailsService.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_SYN_ConfigurationDetailsService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_ConfigurationDetailsService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_ConfigurationDetailsService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_SYN_ConfigurationDetailsService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_SYN_ConfigurationDetailsService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/configurationdetails"/>
+    </target>
+    <target name="wsimport-client-MI_OB_ASYN_QuickBillingService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_QuickBillingService"/>
+        <property name="wsdl-MI_OB_ASYN_QuickBillingService" location="xml-resources/web-service-references/MI_OB_ASYN_QuickBillingService/wsdl/MI_OB_ASYN_QuickBillingService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_QuickBillingService" destdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_QuickBillingService" wsdl="${wsdl-MI_OB_ASYN_QuickBillingService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_ASYN_QuickBillingService.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_ASYN_QuickBillingService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_QuickBillingService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_QuickBillingService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_ASYN_QuickBillingService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_QuickBillingService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/quickbilling"/>
+    </target>
+    <target name="wsimport-client-MI_OB_ASYN_SalesOrderService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_SalesOrderService"/>
+        <property name="wsdl-MI_OB_ASYN_SalesOrderService" location="xml-resources/web-service-references/MI_OB_ASYN_SalesOrderService/wsdl/MI_OB_ASYN_SalesOrderService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_SalesOrderService" destdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_SalesOrderService" wsdl="${wsdl-MI_OB_ASYN_SalesOrderService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_ASYN_SalesOrderService.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_ASYN_SalesOrderService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_SalesOrderService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_SalesOrderService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_ASYN_SalesOrderService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_SalesOrderService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/salesorder"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-MI_OB_ASYN_Inquiry, wsimport-client-MI_OB_ASYN_PatchStatus, wsimport-client-MI_OB_ASYN_Quotation, wsimport-client-MI_OB_ASYN_SalesOrderModification, wsimport-client-MI_OB_SYN_DataArchivalExecution, wsimport-client-MI_OB_SYN_GVVerification, wsimport-client-MI_OB_SYN_VersionManagement, wsimport-client-MI_OB_SYN_HighFrequencyResponse, wsimport-client-MI_OB_SYN_SiteDateInfo, wsimport-client-MI_OB_ASYN_HighFrequencyLog, wsimport-client-MI_OB_SYN_HighFrequencyStock, wsimport-client-MI_OB_SYN_DataArchieving, wsimport-client-MI_OB_ASYN_DataArchieving, wsimport-client-SI_OB_ASYN_GiftVoucherIssualService, wsimport-client-MI_OB_ASYN_GiftCardCancelService, wsimport-client-MI_OB_ASYN_GiftCardSalesService, wsimport-client-MI_OB_ASYN_AdvanceReceiptQuickService, wsimport-client-MI_OB_ASYN_InvoiceCancellationService, wsimport-client-MI_OB_ASYN_AdvanceReceiptService, wsimport-client-MI_OB_ASYN_AdvanceReceiptSaleOrderCancellationService, wsimport-client-MI_OB_ASYN_PayOutService, wsimport-client-MI_OB_ASYN_ARReversalService, wsimport-client-MI_OB_ASYN_ServiceOrderService, wsimport-client-MI_OB_ASYN_CustomerMasterService, wsimport-client-MI_OB_ASYN_InvoiceCreationService, wsimport-client-MI_OB_SYN_HighFrequencyArticleDataService, wsimport-client-MI_OB_ASYN_SalesReturnService, wsimport-client-MI_OB_SYN_HighFrequencyDataService, wsimport-client-MI_OB_SYN_ConfigurationDetailsService, wsimport-client-MI_OB_ASYN_QuickBillingService, wsimport-client-MI_OB_ASYN_SalesOrderService"/>
+</project>
