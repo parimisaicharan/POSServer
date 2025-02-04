@@ -482,38 +482,6 @@
         </wsimport-option>
       </wsimport-options>
     </client>
-    <client name="MI_OB_ASYN_GiftCardSalesService">
-      <wsdl-url>file:/C:/POS_WSDLS_new/MI_OB_ASYN_GiftCardSalesService.wsdl</wsdl-url>
-      <local-wsdl-file>MI_OB_ASYN_GiftCardSalesService.wsdl</local-wsdl-file>
-      <package-name>in.co.titan.giftcardsales</package-name>
-      <catalog-file>catalog.xml</catalog-file>
-      <wsimport-options>
-        <wsimport-option>
-          <wsimport-option-name>extension</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>verbose</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>fork</wsimport-option-name>
-          <wsimport-option-value>false</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>wsdlLocation</wsimport-option-name>
-          <wsimport-option-value>file:/C:/POS_WSDLS_new/MI_OB_ASYN_GiftCardSalesService.wsdl</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>xnocompile</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-        <wsimport-option>
-          <wsimport-option-name>xendorsed</wsimport-option-name>
-          <wsimport-option-value>true</wsimport-option-value>
-        </wsimport-option>
-      </wsimport-options>
-    </client>
     <client name="MI_OB_ASYN_AdvanceReceiptQuickService">
       <wsdl-url>file:/C:/POS_WSDLS_new/MI_OB_ASYN_AdvanceReceiptQuickService.wsdl</wsdl-url>
       <local-wsdl-file>MI_OB_ASYN_AdvanceReceiptQuickService.wsdl</local-wsdl-file>
@@ -983,6 +951,38 @@
         <wsimport-option>
           <wsimport-option-name>wsdlLocation</wsimport-option-name>
           <wsimport-option-value>file:/C:/POS_WSDLS_new/MI_OB_ASYN_SalesOrderService.wsdl</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xnocompile</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xendorsed</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+      </wsimport-options>
+    </client>
+    <client name="MI_OB_ASYN_GiftCardSalesService">
+      <wsdl-url>file:/C:/POS_WSDLS_new/MI_OB_ASYN_GiftCardSalesService.wsdl</wsdl-url>
+      <local-wsdl-file>MI_OB_ASYN_GiftCardSalesService.wsdl</local-wsdl-file>
+      <package-name>in.co.titan.giftcardsales</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+      <wsimport-options>
+        <wsimport-option>
+          <wsimport-option-name>extension</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>verbose</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>fork</wsimport-option-name>
+          <wsimport-option-value>false</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>wsdlLocation</wsimport-option-name>
+          <wsimport-option-value>file:/C:/POS_WSDLS_new/MI_OB_ASYN_GiftCardSalesService.wsdl</wsimport-option-value>
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>xnocompile</wsimport-option-name>

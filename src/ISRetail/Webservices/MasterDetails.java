@@ -373,7 +373,8 @@ public class MasterDetails {
     }
 
     /**
-     * To get the Saleorder Cancellation Advance Receipt Cancellation Data Object
+     * To get the Saleorder Cancellation Advance Receipt Cancellation Data
+     * Object
      */
     public static DataObject getSaleOrderAdvanceReceiptCancelation(Connection con, String saleOrder, String creditnoteNo) throws SQLException {
 
@@ -422,7 +423,8 @@ public class MasterDetails {
     }
 
     /**
-     * To get the Serviceorder Cancellation Advance Receipt Cancellation Data Object
+     * To get the Serviceorder Cancellation Advance Receipt Cancellation Data
+     * Object
      */
     public static DataObject getServiceOrderAdvanceReceiptCancelation(Connection con, String saleOrder, String creditnoteNo) throws SQLException {
 
@@ -631,14 +633,14 @@ public class MasterDetails {
         SalesReturnHeaderPOJO salesReturnHeaderPOJO = null;
         ArrayList<SOLineItemPOJO> ackLineItems = null;
         CreditNotePOJO creditNotePOJO = null;
-        SalesOrderHeaderDO  SalesOrderHeaderDO=null;
+        SalesOrderHeaderDO SalesOrderHeaderDO = null;
         NRCreditNotePOJO nRCreditNotePOJO = null;
         SalesReturnMasterBean masterBean = null;
         String salesReturnNo = null;
         DataObject obj = null;
         CreditNoteDO creditNoteDO;
-        String refSaleOrderNo=null;
-               try {
+        String refSaleOrderNo = null;
+        try {
             if (Validations.isFieldNotEmpty(ackNo)) {
                 saleReturnHeaderDO = new SalesReturnHeaderDO();
                 acknowledgementHeaderDO = new AcknowledgementHeaderDO();
@@ -646,7 +648,7 @@ public class MasterDetails {
                 storeCode = new SiteMasterDO().getSiteId(con);
                 masterBean = new SalesReturnMasterBean();
                 acknowledgementHeaderPOJO = acknowledgementHeaderDO.getAcknowledgementDetailsByAckNo(con, ackNo);
-                refSaleOrderNo=acknowledgementHeaderPOJO.getRefsaleorderno();
+                refSaleOrderNo = acknowledgementHeaderPOJO.getRefsaleorderno();
                 //ackLineItems = acknowledgementItemDO.getAcknowledgementItemDetailsByAckNo(con, ackNo, null, 0,refSaleOrderNo);
                 ackLineItems = acknowledgementItemDO.getAcknowledgementItemDetailsByAckNo(con, ackNo, null, 0);
                 salesReturnHeaderPOJO = saleReturnHeaderDO.getSaleReturnByAckNo(con, ackNo, storeCode);
@@ -759,7 +761,7 @@ public class MasterDetails {
     }
 
     //Code Added on 11-01-2010 for adding gift card selling
-    public static DataObject getGiftCardSelling(Connection con, String gcdocno) throws SQLException {
+    public static DataObject getGiftCardSelling(Connection con, String gcdocno, String refcreditnote, String nrcreditnoteno) throws SQLException {
         GiftCardSellingBean masterBean = null;
         DataObject obj = null;
         ArrayList<AdvanceReceiptDetailsPOJO> paymentlist = null;
@@ -773,7 +775,7 @@ public class MasterDetails {
             header = new GiftCardSellingDO();
             advanceReceiptDetailsDO = new AdvanceReceiptDetailsDO();
             searchstmt = "select * from tbl_giftcard_selling where gcdocumentno='" + gcdocno + "'";
-            giftCardSellingPOJO = header.getGiftCardheaderforwebservices(con, searchstmt);
+            giftCardSellingPOJO = header.getGiftCardheaderforwebservices(con, searchstmt,refcreditnote,nrcreditnoteno);
             masterBean = new GiftCardSellingBean();
             masterBean.setGiftCardSellingPOJO(giftCardSellingPOJO);
             searchstmt1 = "select * from tbl_paymentdetails1 where documentno='" + gcdocno + "'";
@@ -850,6 +852,7 @@ public class MasterDetails {
         }
         return obj;
     }
+
     public static DataObject getCashReceiptCancellation(Connection con, String advanceno) {
         DataObject obj = null;
         CashReceiptCancellationBean masterbean = null;
@@ -861,7 +864,4 @@ public class MasterDetails {
         }
         return obj;
     }
-} 
-    
-
-
+}

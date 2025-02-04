@@ -271,23 +271,6 @@
         <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_GiftCardCancelService"/>
         <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/giftcardcancel"/>
     </target>
-    <target name="wsimport-client-MI_OB_ASYN_GiftCardSalesService" depends="wsimport-init">
-        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_GiftCardSalesService"/>
-        <property name="wsdl-MI_OB_ASYN_GiftCardSalesService" location="xml-resources/web-service-references/MI_OB_ASYN_GiftCardSalesService/wsdl/MI_OB_ASYN_GiftCardSalesService.wsdl"/>
-        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_GiftCardSalesService" destdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_GiftCardSalesService" wsdl="${wsdl-MI_OB_ASYN_GiftCardSalesService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_ASYN_GiftCardSalesService.wsdl" xnocompile="true" xendorsed="true">
-            <depends file="${wsdl-MI_OB_ASYN_GiftCardSalesService}"/>
-            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_GiftCardSalesService"/>
-        </wsimport>
-        <copy todir="${build.generated.sources.dir}/jax-ws">
-            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_GiftCardSalesService">
-                <include name="**/*.java"/>
-            </fileset>
-        </copy>
-    </target>
-    <target name="wsimport-client-clean-MI_OB_ASYN_GiftCardSalesService" depends="-init-project">
-        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_GiftCardSalesService"/>
-        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/giftcardsales"/>
-    </target>
     <target name="wsimport-client-MI_OB_ASYN_AdvanceReceiptQuickService" depends="wsimport-init">
         <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_AdvanceReceiptQuickService"/>
         <property name="wsdl-MI_OB_ASYN_AdvanceReceiptQuickService" location="xml-resources/web-service-references/MI_OB_ASYN_AdvanceReceiptQuickService/wsdl/MI_OB_ASYN_AdvanceReceiptQuickService.wsdl"/>
@@ -543,5 +526,22 @@
         <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_SalesOrderService"/>
         <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/salesorder"/>
     </target>
-    <target name="wsimport-client-generate" depends="wsimport-client-MI_OB_ASYN_Inquiry, wsimport-client-MI_OB_ASYN_PatchStatus, wsimport-client-MI_OB_ASYN_Quotation, wsimport-client-MI_OB_ASYN_SalesOrderModification, wsimport-client-MI_OB_SYN_DataArchivalExecution, wsimport-client-MI_OB_SYN_GVVerification, wsimport-client-MI_OB_SYN_VersionManagement, wsimport-client-MI_OB_SYN_HighFrequencyResponse, wsimport-client-MI_OB_SYN_SiteDateInfo, wsimport-client-MI_OB_ASYN_HighFrequencyLog, wsimport-client-MI_OB_SYN_HighFrequencyStock, wsimport-client-MI_OB_SYN_DataArchieving, wsimport-client-MI_OB_ASYN_DataArchieving, wsimport-client-SI_OB_ASYN_GiftVoucherIssualService, wsimport-client-MI_OB_ASYN_GiftCardCancelService, wsimport-client-MI_OB_ASYN_GiftCardSalesService, wsimport-client-MI_OB_ASYN_AdvanceReceiptQuickService, wsimport-client-MI_OB_ASYN_InvoiceCancellationService, wsimport-client-MI_OB_ASYN_AdvanceReceiptService, wsimport-client-MI_OB_ASYN_AdvanceReceiptSaleOrderCancellationService, wsimport-client-MI_OB_ASYN_PayOutService, wsimport-client-MI_OB_ASYN_ARReversalService, wsimport-client-MI_OB_ASYN_ServiceOrderService, wsimport-client-MI_OB_ASYN_CustomerMasterService, wsimport-client-MI_OB_ASYN_InvoiceCreationService, wsimport-client-MI_OB_SYN_HighFrequencyArticleDataService, wsimport-client-MI_OB_ASYN_SalesReturnService, wsimport-client-MI_OB_SYN_HighFrequencyDataService, wsimport-client-MI_OB_SYN_ConfigurationDetailsService, wsimport-client-MI_OB_ASYN_QuickBillingService, wsimport-client-MI_OB_ASYN_SalesOrderService"/>
+    <target name="wsimport-client-MI_OB_ASYN_GiftCardSalesService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_GiftCardSalesService"/>
+        <property name="wsdl-MI_OB_ASYN_GiftCardSalesService" location="xml-resources/web-service-references/MI_OB_ASYN_GiftCardSalesService/wsdl/MI_OB_ASYN_GiftCardSalesService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_GiftCardSalesService" destdir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_GiftCardSalesService" wsdl="${wsdl-MI_OB_ASYN_GiftCardSalesService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/POS_WSDLS_new/MI_OB_ASYN_GiftCardSalesService.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MI_OB_ASYN_GiftCardSalesService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_GiftCardSalesService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_GiftCardSalesService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-MI_OB_ASYN_GiftCardSalesService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/MI_OB_ASYN_GiftCardSalesService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/in/co/titan/giftcardsales"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-MI_OB_ASYN_Inquiry, wsimport-client-MI_OB_ASYN_PatchStatus, wsimport-client-MI_OB_ASYN_Quotation, wsimport-client-MI_OB_ASYN_SalesOrderModification, wsimport-client-MI_OB_SYN_DataArchivalExecution, wsimport-client-MI_OB_SYN_GVVerification, wsimport-client-MI_OB_SYN_VersionManagement, wsimport-client-MI_OB_SYN_HighFrequencyResponse, wsimport-client-MI_OB_SYN_SiteDateInfo, wsimport-client-MI_OB_ASYN_HighFrequencyLog, wsimport-client-MI_OB_SYN_HighFrequencyStock, wsimport-client-MI_OB_SYN_DataArchieving, wsimport-client-MI_OB_ASYN_DataArchieving, wsimport-client-SI_OB_ASYN_GiftVoucherIssualService, wsimport-client-MI_OB_ASYN_GiftCardCancelService, wsimport-client-MI_OB_ASYN_AdvanceReceiptQuickService, wsimport-client-MI_OB_ASYN_InvoiceCancellationService, wsimport-client-MI_OB_ASYN_AdvanceReceiptService, wsimport-client-MI_OB_ASYN_AdvanceReceiptSaleOrderCancellationService, wsimport-client-MI_OB_ASYN_PayOutService, wsimport-client-MI_OB_ASYN_ARReversalService, wsimport-client-MI_OB_ASYN_ServiceOrderService, wsimport-client-MI_OB_ASYN_CustomerMasterService, wsimport-client-MI_OB_ASYN_InvoiceCreationService, wsimport-client-MI_OB_SYN_HighFrequencyArticleDataService, wsimport-client-MI_OB_ASYN_SalesReturnService, wsimport-client-MI_OB_SYN_HighFrequencyDataService, wsimport-client-MI_OB_SYN_ConfigurationDetailsService, wsimport-client-MI_OB_ASYN_QuickBillingService, wsimport-client-MI_OB_ASYN_SalesOrderService, wsimport-client-MI_OB_ASYN_GiftCardSalesService"/>
 </project>

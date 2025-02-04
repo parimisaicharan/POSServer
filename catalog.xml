@@ -34,7 +34,6 @@
     <system systemId="file:/C:/POS_WSDLS_new/MI_OB_ASYN_SalesOrder.wsdl" uri="xml-resources/web-service-references/MI_OB_ASYN_SalesOrder/wsdl/MI_OB_ASYN_SalesOrder.wsdl"/>
     <system systemId="file:/C:/POS_WSDLS_new/SI_OB_ASYN_GiftVoucherIssualService.wsdl" uri="xml-resources/web-service-references/SI_OB_ASYN_GiftVoucherIssualService/wsdl/SI_OB_ASYN_GiftVoucherIssualService.wsdl"/>
     <system systemId="file:/C:/POS_WSDLS_new/MI_OB_ASYN_GiftCardCancelService.wsdl" uri="xml-resources/web-service-references/MI_OB_ASYN_GiftCardCancelService/wsdl/MI_OB_ASYN_GiftCardCancelService.wsdl"/>
-    <system systemId="file:/C:/POS_WSDLS_new/MI_OB_ASYN_GiftCardSalesService.wsdl" uri="xml-resources/web-service-references/MI_OB_ASYN_GiftCardSalesService/wsdl/MI_OB_ASYN_GiftCardSalesService.wsdl"/>
     <system systemId="file:/C:/POS_WSDLS_new/MI_OB_ASYN_AdvanceReceiptQuickService.wsdl" uri="xml-resources/web-service-references/MI_OB_ASYN_AdvanceReceiptQuickService/wsdl/MI_OB_ASYN_AdvanceReceiptQuickService.wsdl"/>
     <system systemId="file:/C:/POS_WSDLS_new/MI_OB_ASYN_InvoiceCancellationService.wsdl" uri="xml-resources/web-service-references/MI_OB_ASYN_InvoiceCancellationService/wsdl/MI_OB_ASYN_InvoiceCancellationService.wsdl"/>
     <system systemId="file:/C:/POS_WSDLS_new/MI_OB_ASYN_AdvanceReceiptService.wsdl" uri="xml-resources/web-service-references/MI_OB_ASYN_AdvanceReceiptService/wsdl/MI_OB_ASYN_AdvanceReceiptService.wsdl"/>
@@ -52,4 +51,5 @@
     <system systemId="file:/C:/POS_WSDLS_new/MI_OB_SYN_ConfigurationDetailsService.wsdl" uri="xml-resources/web-service-references/MI_OB_SYN_ConfigurationDetailsService/wsdl/MI_OB_SYN_ConfigurationDetailsService.wsdl"/>
     <system systemId="file:/C:/POS_WSDLS_new/MI_OB_ASYN_QuickBillingService.wsdl" uri="xml-resources/web-service-references/MI_OB_ASYN_QuickBillingService/wsdl/MI_OB_ASYN_QuickBillingService.wsdl"/>
     <system systemId="file:/C:/POS_WSDLS_new/MI_OB_ASYN_SalesOrderService.wsdl" uri="xml-resources/web-service-references/MI_OB_ASYN_SalesOrderService/wsdl/MI_OB_ASYN_SalesOrderService.wsdl"/>
+    <system systemId="file:/C:/POS_WSDLS_new/MI_OB_ASYN_GiftCardSalesService.wsdl" uri="xml-resources/web-service-references/MI_OB_ASYN_GiftCardSalesService/wsdl/MI_OB_ASYN_GiftCardSalesService.wsdl"/>
 </catalog>

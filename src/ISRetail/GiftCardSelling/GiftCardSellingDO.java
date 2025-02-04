@@ -32,6 +32,7 @@ import ISRetail.Webservices.DataObject;
 import ISRetail.Webservices.Webservice;
 import ISRetail.Webservices.XIConnectionDetailsPojo;
 import com.sun.xml.ws.client.BindingProviderProperties;
+import in.co.titan.giftcardsales.DTGiftCardSales;
 import in.co.titan.giftcardsales.DTGiftCardSales.ITEMPAYMENT;
 //import in.co.titan.giftcardcancel.DTGiftCardCancel.ITEMPAYMENT;
 import java.math.BigDecimal;
@@ -209,7 +210,7 @@ public class GiftCardSellingDO implements Webservice {
         }
     }
 
-    public GiftCardSellingPOJO getGiftCardheaderforwebservices(Connection conn, String searchstatement) {
+    public GiftCardSellingPOJO getGiftCardheaderforwebservices(Connection conn, String searchstatement, String refcreditnote, String nrcreditnote) {
         Statement pstmt = null;
         ResultSet rs = null;
         GiftCardSellingPOJO giftCardSellingPOJO = null;
@@ -244,6 +245,28 @@ public class GiftCardSellingDO implements Webservice {
                 giftCardSellingPOJO.setTransactionid(rs.getString("transactionid"));
                 giftCardSellingPOJO.setGiftcardinvoiceno(rs.getString("giftcardinvoiceno"));
                 giftCardSellingPOJO.setGiftcardexpirydate(rs.getInt("giftcardexpirydate"));
+                if (refcreditnote != null && refcreditnote.length() > 0) {
+                    PreparedStatement statment = conn.prepareStatement("select creditnoteno,amount,refno,reftype,expirydate from tbl_creditnote where creditnoteno=? and category='RF'");
+                    statment.setString(1, refcreditnote);
+                    ResultSet resultrefCredit = statment.executeQuery();
+                    while (resultrefCredit.next()) {
+                        giftCardSellingPOJO.setRefCreditNoteno(refcreditnote);
+                        giftCardSellingPOJO.setRefExcessReftype(resultrefCredit.getString("reftype"));
+                        giftCardSellingPOJO.setRefExcessamount(resultrefCredit.getDouble("amount"));
+                        giftCardSellingPOJO.setRefCreditnoteexpirydate(resultrefCredit.getInt("expirydate"));
+                    }
+                }
+                if (nrcreditnote != null && nrcreditnote.length() > 0) {
+                    PreparedStatement statment = conn.prepareStatement("select creditnoteno,amount,refno,reftype,expirydate from tbl_creditnote where creditnoteno=? and category='NR'");
+                    statment.setString(1, nrcreditnote);
+                    ResultSet resultnrCredit = statment.executeQuery();
+                    while (resultnrCredit.next()) {
+                        giftCardSellingPOJO.setNrCreditNoteno(nrcreditnote);
+                        giftCardSellingPOJO.setNrExcessReftype(resultnrCredit.getString("reftype"));
+                        giftCardSellingPOJO.setNrExcessamount(resultnrCredit.getDouble("amount"));
+                        giftCardSellingPOJO.setNrCreditnoteexpirydate(resultnrCredit.getInt("expirydate"));
+                    }
+                }
 
                 //End code added by dileep - 20.09.2013
             }
@@ -525,8 +548,9 @@ public class GiftCardSellingDO implements Webservice {
                         /*cardtype*/ itemtable.setBRTYPE(String.valueOf(advpojo.getCardtype()));
 
                         itemtable.setPAYMENTMODE(advpojo.getModeofpayment());
-                        if(Validations.isFieldNotEmpty(advpojo.getAuthorizedperson())){
-                        itemtable.setLPAPPNOS(advpojo.getAuthorizedperson());}
+                        if (Validations.isFieldNotEmpty(advpojo.getAuthorizedperson())) {
+                            itemtable.setLPAPPNOS(advpojo.getAuthorizedperson());
+                        }
                     } else if (advpojo.getModeofpayment().equalsIgnoreCase("HCC")) {
                         advpojo.setLineitemno(v.indexOf(advpojo) + 1);
 
@@ -750,6 +774,62 @@ public class GiftCardSellingDO implements Webservice {
                     }
                     mtGiftCardSales.getITEMPAYMENT().add(itemtable);
                 }
+                if (giftCardSellingPOJO.getRefCreditNoteno() != null && giftCardSellingPOJO.getRefCreditNoteno().length() > 0) {
+                    DTGiftCardSales.EXCESSPAYMENT refexcesspayment = new DTGiftCardSales.EXCESSPAYMENT();
+                    if (giftCardSellingPOJO.getRefExcessReftype().equalsIgnoreCase("EXCESS AMOUNT")) {
+                        refexcesspayment.setFlag("C");
+                    }
+                    refexcesspayment.setAmount(new BigDecimal(String.valueOf(giftCardSellingPOJO.getRefExcessamount())));
+                    refexcesspayment.setSiteID(giftCardSellingPOJO.getStorecode());
+                    refexcesspayment.setSrNO(new BigInteger(String.valueOf(1)));
+                    refexcesspayment.setPOSAdvRecNO(giftCardSellingPOJO.getRefCreditNoteno());
+                    try {
+                        if (giftCardSellingPOJO.getRefCreditnoteexpirydate() != 0) {
+                            java.util.Date followDate = ConvertDate.getUtilDateFromNumericDate(giftCardSellingPOJO.getRefCreditnoteexpirydate());
+                            if (followDate != null) {
+                                XMLCalendar xmlDate = new XMLCalendar(followDate);
+                                if (xmlDate != null) {
+                                    refexcesspayment.setDate((xmlDate));
+                                }
+                            }
+                        }
+
+                    } catch (Exception e) {
+                        System.out.println("DocumentDate date not Set" + e);
+                    }
+                    refexcesspayment.setPaymentMode("CRN");
+                    mtGiftCardSales.getEXCESSPAYMENT().add(refexcesspayment);
+                }
+                if (giftCardSellingPOJO.getNrCreditNoteno() != null && giftCardSellingPOJO.getNrCreditNoteno().length() > 0) {
+                    DTGiftCardSales.EXCESSPAYMENT nrexcesspayment = new DTGiftCardSales.EXCESSPAYMENT();
+                    if (giftCardSellingPOJO.getNrExcessReftype().equalsIgnoreCase("EXCESS AMOUNT")) {
+                        nrexcesspayment.setFlag("C");
+                    }
+                    nrexcesspayment.setAmount(new BigDecimal(String.valueOf(giftCardSellingPOJO.getNrExcessamount())));
+                    nrexcesspayment.setSiteID(giftCardSellingPOJO.getStorecode());
+                    if (giftCardSellingPOJO.getRefCreditNoteno() != null && giftCardSellingPOJO.getRefCreditNoteno().length() > 0) {
+                        nrexcesspayment.setSrNO(new BigInteger(String.valueOf(2)));
+                    } else {
+                        nrexcesspayment.setSrNO(new BigInteger(String.valueOf(1)));
+                    }
+                    nrexcesspayment.setPOSAdvRecNO(giftCardSellingPOJO.getNrCreditNoteno());
+                    try {
+                        if (giftCardSellingPOJO.getNrCreditnoteexpirydate() != 0) {
+                            java.util.Date followDate = ConvertDate.getUtilDateFromNumericDate(giftCardSellingPOJO.getNrCreditnoteexpirydate());
+                            if (followDate != null) {
+                                XMLCalendar xmlDate = new XMLCalendar(followDate);
+                                if (xmlDate != null) {
+                                    nrexcesspayment.setDate((xmlDate));
+                                }
+                            }
+                        }
+
+                    } catch (Exception e) {
+                        System.out.println("DocumentDate date not Set" + e);
+                    }
+                    nrexcesspayment.setPaymentMode("NCR");
+                    mtGiftCardSales.getEXCESSPAYMENT().add(nrexcesspayment);
+                }
                 if (mtGiftCardSales.getSITEID() != null && mtGiftCardSales.getSITEID().trim().length() > 0) {
 
                     System.out.println("Service Name : " + service.getServiceName());
@@ -945,8 +1025,9 @@ public class GiftCardSellingDO implements Webservice {
                         /*cardtype*/ itemtable.setBRTYPE(String.valueOf(advpojo.getCardtype()));
 
                         itemtable.setPAYMENTMODE(advpojo.getModeofpayment());
-                        if(Validations.isFieldNotEmpty(advpojo.getAuthorizedperson())){
-                        itemtable.setLPAPPNOS(advpojo.getAuthorizedperson());}
+                        if (Validations.isFieldNotEmpty(advpojo.getAuthorizedperson())) {
+                            itemtable.setLPAPPNOS(advpojo.getAuthorizedperson());
+                        }
                     } else if (advpojo.getModeofpayment().equalsIgnoreCase("CRN")) {
                         advpojo.setLineitemno(v.indexOf(advpojo) + 1);
                         itemtable.setSRNO(new BigInteger(String.valueOf(advpojo.getLineitemno())));

@@ -2,7 +2,6 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package ISRetail.GiftCardSelling;
 
 /**
@@ -36,6 +35,14 @@ public class GiftCardSellingPOJO {
     private String transactionid;
     private String giftcardinvoiceno;
     private int giftcardexpirydate;
+    private int refcreditnoteexpirydate;
+    private String refcreditNoteno;
+    private double refexcessamount;
+    private int nrcreditnoteexpirydate;
+    private String nrcreditNoteno;
+    private double nrexcessamount;
+    private String refexcessReftype;
+    private String nrexcessReftype;
 
     //End code added by dileep - 20.09.2013
     public String getStorecode() {
@@ -222,4 +229,66 @@ public class GiftCardSellingPOJO {
         this.giftcardexpirydate = giftcardexpirydate;
     }
 
+    public int getRefCreditnoteexpirydate() {
+        return refcreditnoteexpirydate;
+    }
+
+    public void setRefCreditnoteexpirydate(int creditnoteexpirydate) {
+        this.refcreditnoteexpirydate = creditnoteexpirydate;
+    }
+
+    public String getRefCreditNoteno() {
+        return refcreditNoteno;
+    }
+
+    public void setRefCreditNoteno(String creditNoteno) {
+        this.refcreditNoteno = creditNoteno;
+    }
+
+    public double getRefExcessamount() {
+        return refexcessamount;
+    }
+
+    public void setRefExcessamount(double excessamount) {
+        this.refexcessamount = excessamount;
+    }
+
+    public int getNrCreditnoteexpirydate() {
+        return nrcreditnoteexpirydate;
+    }
+
+    public void setNrCreditnoteexpirydate(int creditnoteexpirydate) {
+        this.nrcreditnoteexpirydate = creditnoteexpirydate;
+    }
+
+    public String getNrCreditNoteno() {
+        return nrcreditNoteno;
+    }
+
+    public void setNrCreditNoteno(String creditNoteno) {
+        this.nrcreditNoteno = creditNoteno;
+    }
+
+    public double getNrExcessamount() {
+        return nrexcessamount;
+    }
+
+    public void setNrExcessamount(double excessamount) {
+        this.nrexcessamount = excessamount;
+    }
+
+    public String getRefExcessReftype() {
+        return refexcessReftype;
+    }
+
+    public void setRefExcessReftype(String excessReftype) {
+        this.refexcessReftype = excessReftype;
+    }
+    public String getNrExcessReftype() {
+        return nrexcessReftype;
+    }
+
+    public void setNrExcessReftype(String excessReftype) {
+        this.nrexcessReftype = excessReftype;
+    }
 }
